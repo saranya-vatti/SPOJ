@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main(){
+	double bulb[3];
+	scanf("%lf %lf %lf",&bulb[0],&bulb[1],&bulb[2]);
+	for(i=0;i<2;i++){
+		for(j=0;j<4;j++){
+			

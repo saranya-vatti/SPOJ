@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	long long int i,n,t,sum,j,temp;
+	scanf("%lld",&t);
+	for(i=0;i<t;i++){
+		scanf("%lld",&n);
+		sum=0;
+		for(j=0;j<n;j++){
+			scanf("%lld",&temp);
+			sum+=temp;
+		}
+		if(sum%n==0) printf("YES\n");
+		else printf("NO\n");
+	}
+	return (0);
+}

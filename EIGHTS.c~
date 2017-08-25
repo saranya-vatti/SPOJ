@@ -1,0 +1,17 @@
+#include<math.h> //when using math.h, link explicitly with gcc progname.c -lm
+#include <stdio.h>
+#include<stdlib.h>
+int main(){
+	int arr[]={192,442,692,942};
+	long long int n,row,t;
+	scanf("%lld",&t);
+	while(t--){
+		scanf("%lld",&n);
+		if(n%4 == 0) row=(n/4)-1;
+		else row=n/4;
+		if(row!=0) printf("%lld%d\n",row,arr[(n-1)%4]);
+		else printf("%d\n",arr[(n%4)-1]);
+	}
+	return (0);
+}
+	

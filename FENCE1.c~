@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	long long int L,intans;
+	double ans;
+	scanf("%lld",&L);
+	while(L!=0){
+		ans= (L*L)/(2*3.14);
+		ans = ans*1000;
+		intans= (int)ans;
+		if(intans%10 >=5) intans+=10;
+		intans=intans/10;
+		printf("%llu.%llu\n",(intans/100),(intans%100));
+		scanf("%lld",&L);
+	}
+	return (0);
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+	unsigned long long int pos[100000],inp[100000],i,n;
+	scanf("%llu",&n);
+	while(n!=0){
+		for(i=0;i<n;i++){
+			scanf("%llu ",&inp[i]);
+		}
+		for(i=0;i<n;i++){
+			printf("%llu\t",inp[i]);
+		}
+		printf("\n");
+		scanf("%llu",&n);
+	}
+	return(0);
+}
